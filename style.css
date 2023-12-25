@@ -1,0 +1,1101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 42px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    flex-grow: 8;
+}
+li{
+    padding: 0 10px;
+}
+.phone{
+    flex-grow: 1;
+}
+.phone i{
+    color: #00AAC6;
+}
+.navicons{
+    flex-grow: 1;
+}
+.navicons i{
+    padding: 0 15px;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 93px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+.logo p{
+    font-size: 28.9px;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+header .menu{
+    font-size: 14px;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+}
+header ul li i{
+    color: #00AAC6;
+}
+header li:hover, header li:active{
+    color: #00AAC6;
+    background-color: #EBEBEB;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+}
+header ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+header ul.dropdown li{
+    display: block;
+    padding: 10px;
+}
+header ul.dropdown{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -120px;
+    z-index: 9;
+    padding: 0;
+    display: none;
+}
+header ul li:hover ul.dropdown{
+    display: block;
+}
+header > p{
+    color: #00AAC6;
+    font-size: 20px;
+    padding: 30px 40px;
+    height: 93px;
+    border-right: 1px solid gray;
+}
+header >img{
+    padding: 40px;
+}
+.regsignin{
+    display: flex;
+    line-height: 93px;
+    width: 25%;
+    display: block;
+}
+.regsignin a{
+    text-decoration: none;
+    color: #00AAC6;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 30px;
+    border-right: 1px solid #eeee;
+}
+.regsignin img{
+    width: 50px;
+}
+.regsignin2{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 25%;
+    display: none;
+}
+.regsignin2 a{
+    text-decoration: none;
+    color: #00AAC6;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 30px;
+    border-right: 1px solid #eeee;
+}
+.regsignin2 img{
+    width: 50px;
+    height: 50px;
+}
+.bars .checkbtn{
+    font-size: 20px;
+    display: none;
+}
+#checkbox{
+    display: none;
+}
+.myclass1 .item{
+    position: relative;
+}
+.myclass1 .overlay{
+    background-image: url(imgs/Clip1.png);
+    height: 650px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.myclass1 .overlay::after{
+    content: "";
+    background-color: black;
+    opacity: 65%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+}
+.myclass1 .text{
+    color: white;
+    z-index: 3;
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    justify-content: center;
+    line-height: 1;
+    gap: 50px;
+}
+.text .pc{
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.text .gt{
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #FFD129;
+}
+.text .td{
+    font-size: 16px;
+    width: 40%;
+    color: azure;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.buttons{
+    background-color: RGBA(255, 209, 41, 1);
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    width: 182;
+    height: 52;
+    font-size: 14px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to right, RGBA(255, 209, 41, 1) 0%, #00C1E3 0%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 0% 100%;
+    background-position: 100% 0;
+    transition: background-size 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+.buttons:hover, .buttons:active{
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+.myclass1 .owl-dots{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 2%;
+    top: 250px;
+    align-items: center;
+    width: 8px;
+}
+.myclass1 .owl-dot span{
+    height: 61px !important;
+    width: 8px !important;
+}
+.myclass1 .owl-dot.active span{
+    height: 122px !important;
+    width: 8px !important;
+    background-color: #FFD129 !important;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 15px;
+}
+h2::before{
+    content: "";
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    width: 120px;
+    border-bottom: 3px solid #FFD129;
+}
+.containor{
+    text-align: center;
+    padding: 150px 0;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+}
+.containor p{
+    font-family: 'Source Sans 3', sans-serif;
+}
+.card h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #00C1E3;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 363px;
+    height: 433px;
+    border: 1px solid RGBA(231, 231, 231, 1);
+    text-align: center;
+    padding: 60px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+.overlay2{
+    background-image: url(imgs/Clip2.png);
+    height: 780px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+.overlay2::after{
+    content: "";
+    background-color: black;
+    opacity: 65%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.discover{
+    position: absolute;
+    z-index: 3;
+    text-align: center !important;
+    padding-top: 100px;
+    width: 100%;
+    margin: auto;
+}
+.discover h2{
+    color: #363636;
+}
+.discover > p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    color: #777;
+}
+.myclass2{
+    padding: 100px 20px;
+    max-width: 1300px;
+    margin: auto;
+}
+.imgcard{
+    background-color: white;
+    width: 280px;
+    height: 309px;
+    text-align: left;
+    color: #636363;
+    position: relative;
+    margin: 0 auto;
+}
+.imgcard h4{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 12px 12px 4px;
+}
+.imgcard .des{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    padding-left: 12px;
+}
+.imgcard .member{
+    position: absolute;
+    top: 166px;
+    right: 0px;
+    padding: 6px 15px;
+    background-color: RGBA(73, 72, 69, 1);
+    color: white;
+}
+.cardfooter{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    background-color: RGBA(243, 243, 243, 1);
+    color: #B7B7B7;
+}
+.cardfooter .fa{
+    padding-left: 10px;
+}
+.cardfooter a{
+    text-decoration: none;
+    color: #B7B7B7;
+    padding-right: 10px;
+}
+.myclass2 .owl-dot.active span{
+    border: 2px solid #FFD129;
+    padding: 4px;
+    background-color: black !important;
+}
+
+.profiles {
+    margin: 65px 0px;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profiles img.tooltip {
+    width: 98px;
+    margin: 10px;
+}
+
+.profiles img:hover + span.tooltiptext
+{
+    visibility: visible !important;
+}
+span.tooltiptext
+{
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 6px;
+    position: absolute;
+    top: 100%;
+    margin-left: -90px;
+    z-index: 2;
+}
+
+.tooltip span.tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+span.arrow{
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    top: -20%;
+    left: 45%;
+}
+.containor2{
+    background-image: url(imgs/Clip3.png);
+    background-size: cover;
+    height: 612px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 150px 0px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.myclass3{
+    max-width: 1300px;
+    margin: auto;
+}
+.rattingcard{
+    margin: 100px 20px 0px;
+    width: 570px;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+}
+.rattingcard img{
+    flex-grow: 4;
+}
+.rattingcard div{
+    flex-grow: 6;
+    text-align: left;
+}
+.rattingcard i{
+    color: gold;
+}
+.rattingcard .greystar{
+    color: #EBEBEB;
+}
+.rattingimg{
+    width: 150px;
+}
+.rattingtext{
+    margin-left: 20px;    
+}
+.rattingtext .rattingp{
+    padding: 10px 0px;
+}
+.rattingtext h5{
+    color: #22B5CE;
+}
+.rattingtext span{
+    color: #C2C2C2;
+}
+.myclass3 .owl-dot.active span{
+    border: 2px solid #22B5CE;
+    padding: 4px;
+    background-color: #fff !important;
+}
+.newscard h4{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #555555;
+}
+.newscards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.newscard{
+    width: 370px;
+    height: 400px;
+    margin: 70px 7px;
+    border: 1px solid RGBA(231, 231, 231, 1);
+    font-family: 'Source Sans 3', sans-serif;
+}
+.newscard:hover{
+    border: 1px solid #FFD129;
+}
+.newscard:hover h4, .newscard:hover a{
+    color: #22B5CE;
+}
+.newstext{
+    padding: 20px;
+    text-align: left;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.newstext p{
+    padding: 10px 0px 5px;
+    font-size: 14px;
+    color: #888888;
+}
+.newstext a{
+    font-size: 14px;
+    color: #D1D1D1;
+    text-decoration: none;
+}
+.newscard img{
+    width: 370px;
+}
+.newscard .newsfooter{
+    background-color: #FBFBFB;
+    height: 42px;
+    width: auto;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #8E97AC;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.newscard .newsfooter span{
+    color: #22B5CE;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.overlay3{
+    background-image: url(imgs/Clip4.png);
+    height: 640px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+.overlay3::after{
+    content: "";
+    background-color: black;
+    opacity: 65%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.containor3{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    max-width: 1300px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 214px 50px;
+    text-align: center;
+}
+.containor3 h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.containor3 span{
+    color: #FFD129;
+}
+.containor3 > p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    /* text-align: justify; */
+    line-height: 2;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.purchase{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 212px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.purchase h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+.purchase span{
+    color: #FFD129;
+}
+footer{
+    background-color: #111111;
+    color: #888888;
+    width: 100%;
+}
+.footerdiv{
+    max-width: 1300px;
+    margin: auto;
+}
+.footer_row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+}
+.footer_col{
+    width: 25%;
+    padding: 0px 20px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.footer_col h3{
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer_col h3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    border-bottom: 2px solid #FFD129;
+}
+.footer_col h5{
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+.footer_col .date{
+    color: #c3c3c3;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer_col .footernews{
+    display: flex;
+    gap: 20px;
+}
+.footer_col p{
+    text-align: justify;
+}
+.footer_col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer_col ul{
+    list-style: none;
+    padding: 0;
+}
+.footer_col ul li{
+    padding: 0;
+}
+.footer_col ul li a{
+    font-size: 15px;
+    color: #888888;
+    text-decoration: none;
+    padding: 0;
+    display: block;
+    transition: 0.3s;
+}
+.footer_col ul li a:hover,
+.footer_col ul li a:active{
+    color: white;
+    padding-left: 8px;
+}
+.footer_col i{
+    display: inline-block;
+    color: #888888;
+    margin-right: 15px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.footer_col i:hover,
+.footer_col i:active{
+    color: #02A1BC;
+}
+.footer_col input{
+    background-color: black;
+    border: 1px solid #005361;
+    height: 42px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+}
+.footer_col img{
+    margin-right: 5px;
+}
+.footer_col span{
+    margin: 0px 10px 75px 0px;
+    position: relative;
+    margin-bottom: 35px !important;
+    line-height: 10px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #222222;
+}
+.footernav{
+    background-color: #FFD129;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 78px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+    width: 100%;
+}
+.footernav span{
+    color: #D9EDE4;
+}
+.footernav a{
+    padding: 0px 20px;
+    border-left: 1px solid #D9EDE4;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1440px){
+    .myclass1 .overlay{
+        height: 550px;
+    }
+    .myclass1 .text{
+        height: 550px;
+        gap: 35px;
+    }
+    .text .pc{
+        font-size: 60px;
+    }
+    .myclass1 .owl-dots{
+        top: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px){
+    .logo p{
+        font-size: 20.9px;
+        padding-left: 10px;
+    }
+    header >img{
+        padding: 20px;
+    }
+    .regsignin a{
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+    .regsignin a img{
+        width: 35px;
+        height: 35px;
+    }
+    .logo{
+        width: 20%;
+    }
+    header .menu{
+        font-size: 12px;
+        width: 60%;
+    }
+    .regsignin{
+        width: 20%;
+    }
+    .regsignin a{
+        font-size: 12px;
+        padding: 15px 10px;
+    }
+    .myclass1 .text{
+        width: 60%;
+    }
+    .myclass1 .owl-dot span{
+        height: 40px !important;
+        width: 5px !important;
+    }
+    .myclass1 .owl-dot.active span{
+        height: 90px !important;
+        width: 5px !important;
+    }
+    
+    .rattingcard{
+        margin-top: 80px;
+        width: 420px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .myclass1 .text{
+        width: 65%;
+    }
+    .imgcard{
+        width: 260px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 848px){
+    .myclass1 .text{
+        width: 70%;
+    }
+    .imgcard{
+        width: 280px;
+        height: 309px;
+    }
+    .footer_col{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    header{
+        height: 63px;
+    }
+    .bars .checkbtn{
+        display: block;
+    }
+    .regsignin{
+        display: none;
+    }
+    .regsignin2{
+        display: block;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .bars{
+        width: 20%;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .logo{
+        width: 80%;
+        justify-content: left;
+        padding-left: 20px;
+    }
+    .menu{
+        background-color: #EBEBEB;
+    }
+    .menu ul li{
+        display: block;
+        width: 100%;
+    }
+    header li:hover, header li:active{
+        color: #00AAC6;
+        background-color: white;
+    }
+    .bars input{
+    display: none !important;
+    }
+    header ul.dropdown{
+        width: 100%;
+        position: absolute;
+        bottom: -110px;
+    }
+    .myclass1 .overlay{
+        height: 500px;
+    }
+    .myclass1 .text{
+        width: 75%;
+        gap: 30px;
+        height: 500px;
+    }
+    .text .pc{
+        font-size: 50px;
+    }
+    .text .gt{
+        font-size: 32px;
+    }
+    .text .td{
+        font-size: 16px;
+        width: 80%;
+    }
+    .containor3{
+        padding: 150px 50px;
+    }
+    .containor3 h3{
+        width: 100%;
+    }
+    .containor3 > p{
+        width: 100%;
+    }
+    .footernav{
+        height: 40px;
+    }
+    .footernav a{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 650px){
+    .imgcard{
+        width: 260px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 598px){
+    .imgcard{
+        width: 280px;
+        height: 309px;
+    }
+    .myclass1 .text{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    nav{
+        display: none;
+    }
+    .myclass1 .overlay{
+        height: 450px;
+    }
+    .myclass1 .text{
+        margin: auto;
+        gap: 20px;
+        height: 450px;
+    }
+    .text .pc{
+        font-size: 40px;
+    }
+    .text .gt{
+        font-size: 32px;
+    }
+    .text .td{
+        font-size: 16px;
+        width: 80%;
+    }
+    .myclass1 .owl-dots{
+        right: 4px;
+    }
+    .myclass1 .owl-dot span{
+        height: 30px !important;
+        width: 4px !important;
+    }
+    .myclass1 .owl-dot.active span{
+        height: 70px !important;
+        width: 4px !important;
+    }
+    .containor{
+        padding: 50px 0px;
+    }
+    .containor p{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    h2::before{
+        bottom: -3px;
+        width: 80px;
+    }
+    .card{
+        width: 263px;
+        height: 333px;
+        padding: 35px 25px 25px;
+        margin-top: 30px;
+    }
+    .overlay2{
+        background-image: url(imgs/Clip2.png);
+        height: 580px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        position: relative;
+    }
+    .discover{
+        position: absolute;
+        z-index: 3;
+        text-align: center !important;
+        padding-top: 50px;
+        width: 100%;
+        margin: auto;
+    }
+    .discover > p{
+        font-size: 10px;
+    }
+    .myclass2{
+        padding: 50px 20px;
+    }
+    .containor2{
+        height: 412px;
+        padding: 60px 0px;
+    }
+    .containor2 p{
+        font-size: 10px;
+    }
+    .rattingcard{
+        margin: 50px auto 0px;
+        width: 370px;
+        padding: 10px;
+    }
+    .newscard h4{
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: #555555;
+    }
+    .newscards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+    .newscard{
+        width: 290px;
+        height: 350px;
+        margin-top: 30px;
+    }
+    .newscard img{
+        width: 290px;
+    }
+    .overlay3{
+        height: 390px;
+    }
+    .containor3{
+        padding: 80px 20px;
+    }
+    .containor3 h3{
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    .containor3 > p{
+        font-size: 12px;
+        width: 100%;
+    }
+    .purchase{
+        width: 100%;
+        height: 212px;
+    }
+    .purchase h3{
+        font-size: 20px;
+    }
+    .purchase p{
+        font-size: 15px;
+    }
+    .purchase a{
+        padding: 15px 30px;
+    }
+    .footer_row{
+        padding: 20px 0;
+    }
+    .footer_col{
+        width: 100%;
+        padding: 20px 40px;
+    }
+    .footernav{
+        height: 40px;
+    }
+    .footernav a{
+        display: none;
+    }
+}
